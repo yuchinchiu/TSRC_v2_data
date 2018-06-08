@@ -167,8 +167,8 @@ gpData.reset_index(inplace=True)
 totalSCNT = len(np.unique(gpData.sbjId))
 # output DataFrame
 os.chdir(workingDir)  # scripts directory
-gpData.to_pickle('gpData_v2.pkl')
-gpSbjInfo.to_pickle('gpSbjInfo_v2.pkl')
+gpData.to_pickle('gpData.pkl')
+gpSbjInfo.to_pickle('gpSbjInfo.pkl')
 gpData.to_csv('gpData.csv',encoding='utf-8', index=False)
 gpSbjInfo.to_csv('gpSbjInfo.csv',encoding='utf-8', index=False)
 
